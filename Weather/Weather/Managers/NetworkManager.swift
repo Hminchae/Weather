@@ -14,11 +14,10 @@ final class NetworkManager {
     
     private init() { }
     
-    func getWeather(lat: Double, lon: Double, completionHandler: @escaping (OpenWeather) -> Void) {
+    func getWeather(id: Int, completionHandler: @escaping (OpenWeather) -> Void) {
         let url = Constants.fullURL
         let para: Parameters = [
-            "lat": lat,
-            "lon": lon,
+            "id": id,
             "appid": Constants.API_KEY,
             "units": "metric"
         ]
