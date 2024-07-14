@@ -24,6 +24,7 @@
 		B1CE61CA2C441FF4000F4AA1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B1CE61C92C441FF4000F4AA1 /* Alamofire */; };
 		B1CE61CD2C441FFF000F4AA1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B1CE61CC2C441FFF000F4AA1 /* SnapKit */; };
 		B1CE61D02C44200D000F4AA1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B1CE61CF2C44200D000F4AA1 /* Kingfisher */; };
+		B1CE61D22C442088000F4AA1 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE61D12C442088000F4AA1 /* UserDefaultManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		B1CE61C22C441F32000F4AA1 /* WEFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEFont.swift; sourceTree = "<group>"; };
 		B1CE61C42C441F7A000F4AA1 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		B1CE61C62C441FCD000F4AA1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B1CE61D12C442088000F4AA1 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				B1CE61C62C441FCD000F4AA1 /* NetworkManager.swift */,
+				B1CE61D12C442088000F4AA1 /* UserDefaultManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				B1CE61972C441BA2000F4AA1 /* AppDelegate.swift in Sources */,
 				B1CE61B42C441D90000F4AA1 /* BaseTableViewCell.swift in Sources */,
 				B1CE61B92C441E05000F4AA1 /* ReuseIdentifierProtocol.swift in Sources */,
+				B1CE61D22C442088000F4AA1 /* UserDefaultManager.swift in Sources */,
 				B1CE61992C441BA2000F4AA1 /* SceneDelegate.swift in Sources */,
 				B1CE61BE2C441EB6000F4AA1 /* APIKey.swift in Sources */,
 				B1CE61B62C441D9F000F4AA1 /* BaseCollectionViewCell.swift in Sources */,
