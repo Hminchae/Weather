@@ -15,6 +15,7 @@
 		B1CE61B22C441D75000F4AA1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE61B12C441D75000F4AA1 /* BaseViewController.swift */; };
 		B1CE61B42C441D90000F4AA1 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE61B32C441D90000F4AA1 /* BaseTableViewCell.swift */; };
 		B1CE61B62C441D9F000F4AA1 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE61B52C441D9F000F4AA1 /* BaseCollectionViewCell.swift */; };
+		B1CE61B92C441E05000F4AA1 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE61B82C441E05000F4AA1 /* ReuseIdentifierProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B1CE61B12C441D75000F4AA1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B1CE61B32C441D90000F4AA1 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		B1CE61B52C441D9F000F4AA1 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		B1CE61B82C441E05000F4AA1 /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		B1CE61AA2C441C9E000F4AA1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B1CE61B72C441DE4000F4AA1 /* Protocols */,
 				B1CE61B02C441CD9000F4AA1 /* Base */,
 			);
 			path = Resources;
@@ -127,6 +130,14 @@
 				B1CE61B52C441D9F000F4AA1 /* BaseCollectionViewCell.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		B1CE61B72C441DE4000F4AA1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B1CE61B82C441E05000F4AA1 /* ReuseIdentifierProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +214,7 @@
 				B1CE61B22C441D75000F4AA1 /* BaseViewController.swift in Sources */,
 				B1CE61972C441BA2000F4AA1 /* AppDelegate.swift in Sources */,
 				B1CE61B42C441D90000F4AA1 /* BaseTableViewCell.swift in Sources */,
+				B1CE61B92C441E05000F4AA1 /* ReuseIdentifierProtocol.swift in Sources */,
 				B1CE61992C441BA2000F4AA1 /* SceneDelegate.swift in Sources */,
 				B1CE61B62C441D9F000F4AA1 /* BaseCollectionViewCell.swift in Sources */,
 			);
