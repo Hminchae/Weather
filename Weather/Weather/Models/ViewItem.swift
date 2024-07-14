@@ -14,3 +14,21 @@ struct BannerItem: Hashable {
     let maxTemp: Int
     let minTemp: Int
 }
+
+struct HourlyItem: Hashable {
+    let hour: String
+    let icon: String
+    let temp: Double
+}
+
+struct WeeklyItem: Hashable {
+    let dayOfWeek: String
+    let icon: String
+    let maxTemp: Double
+    let minTemp: Double
+}
+
+struct EtcInfoItem: Hashable {
+    let title: String
+    let content: String
+}

@@ -64,7 +64,9 @@ final class HorizontalCollectionViewCell: BaseCollectionViewCell {
     
     public func configure(hour: String, icon: String, temp: Double) {
         hourLabel.text = hour
-        weatherIcon.kf.setImage(with: URL(string: "\(Constants.iconURL)\(icon)\(Constants.iconSize)"))
+        let url = URL(string: "\(Constants.iconURL)\(icon)@\(Constants.iconSize)")
+        print(url)
+        weatherIcon.kf.setImage(with: url)
         tempLabel.text = String(Int(temp))
     }
 }
