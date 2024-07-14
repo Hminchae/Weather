@@ -26,15 +26,15 @@ struct Coord: Decodable {
 }
 
 struct ForecastItem: Decodable {
-    let dt: Date
+    let dt: String
     let main: MainInfo
     let weather: [Weather]
     let wind: Wind
     let visibility: Int
     let rain: Rain?
 
-    enum CodingKeys: CodingKey {
-        case dt
+    enum CodingKeys: String, CodingKey {
+        case dt = "dt_txt"
         case main
         case weather
         case wind
@@ -44,8 +44,8 @@ struct ForecastItem: Decodable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        let date = try container.decode(Int.self, forKey: .dt)
-        self.dt = Date(timeIntervalSince1970: TimeInterval(date))
+        let date = try container.decode(String.self, forKey: .dt).toHourString()
+        self.dt = date.toHourString() // 00시
         self.main = try container.decode(MainInfo.self, forKey: .main)
         self.weather = try container.decode([Weather].self, forKey: .weather)
         self.wind = try container.decode(Wind.self, forKey: .wind)
