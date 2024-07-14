@@ -16,6 +16,7 @@ enum WEFont {
     
     static var r13: UIFont = UIFont.systemFont(ofSize: 13, weight: .regular) // 본문 평범 글자
     
+    static var m14: UIFont = UIFont.systemFont(ofSize: 14, weight: .medium) // 기온 글자
     static var b14: UIFont = UIFont.systemFont(ofSize: 14, weight: .bold) // 본문 강조 글자
     
     static var r16: UIFont = UIFont.systemFont(ofSize: 16, weight: .regular)
