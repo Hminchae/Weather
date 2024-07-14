@@ -34,6 +34,8 @@
 		B1CE61E12C443C9F000F4AA1 /* QuarterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE61E02C443C9F000F4AA1 /* QuarterCollectionViewCell.swift */; };
 		B1CE61E32C44412A000F4AA1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE61E22C44412A000F4AA1 /* String+Extension.swift */; };
 		B1CE61E52C4444C9000F4AA1 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE61E42C4444C9000F4AA1 /* Forecast.swift */; };
+		B1CE61E92C44574A000F4AA1 /* OpenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE61E82C44574A000F4AA1 /* OpenRequest.swift */; };
+		B1CE61EB2C445D9F000F4AA1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE61EA2C445D9F000F4AA1 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		B1CE61E02C443C9F000F4AA1 /* QuarterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuarterCollectionViewCell.swift; sourceTree = "<group>"; };
 		B1CE61E22C44412A000F4AA1 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		B1CE61E42C4444C9000F4AA1 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		B1CE61E82C44574A000F4AA1 /* OpenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRequest.swift; sourceTree = "<group>"; };
+		B1CE61EA2C445D9F000F4AA1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,7 @@
 			children = (
 				B1CE61BB2C441E6E000F4AA1 /* Observable.swift */,
 				B1CE61BD2C441EB6000F4AA1 /* APIKey.swift */,
+				B1CE61E82C44574A000F4AA1 /* OpenRequest.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 		B1CE61C02C441F0D000F4AA1 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				B1CE61EA2C445D9F000F4AA1 /* NetworkError.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1CE61DB2C443B86000F4AA1 /* VerticalCollectionViewCell.swift in Sources */,
+				B1CE61E92C44574A000F4AA1 /* OpenRequest.swift in Sources */,
 				B1CE61C72C441FCD000F4AA1 /* NetworkManager.swift in Sources */,
 				B1CE61C32C441F32000F4AA1 /* WEFont.swift in Sources */,
 				B1CE61BC2C441E6E000F4AA1 /* Observable.swift in Sources */,
@@ -319,6 +326,7 @@
 				B1CE61E12C443C9F000F4AA1 /* QuarterCollectionViewCell.swift in Sources */,
 				B1CE61C52C441F7A000F4AA1 /* Weather.swift in Sources */,
 				B1CE61DD2C443C1D000F4AA1 /* HorizontalCollectionViewCell.swift in Sources */,
+				B1CE61EB2C445D9F000F4AA1 /* NetworkError.swift in Sources */,
 				B1CE61B22C441D75000F4AA1 /* BaseViewController.swift in Sources */,
 				B1CE61D72C44233E000F4AA1 /* ViewItem.swift in Sources */,
 				B1CE61DF2C443C4C000F4AA1 /* MapCollectionViewCell.swift in Sources */,

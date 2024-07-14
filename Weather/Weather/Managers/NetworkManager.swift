@@ -14,20 +14,21 @@ final class NetworkManager {
     
     private init() { }
     
-    func getWeather(id: Int, completionHandler: @escaping (OpenWeather) -> Void) {
-        let url = Constants.fullURL
-        let para: Parameters = [
-            "id": id,
-            "appid": Constants.API_KEY,
-            "units": "metric"
-        ]
-        
-        AF.request(url, parameters: para).responseDecodable(of: OpenWeather.self) { response in
+    func request<T: Decodable>(api: OpenRequest, 
+                               model: T.Type, 
+                               completionHandler: @escaping (T?, Error?) -> Void
+    ) {
+        AF.request(api.endPoint,
+                   method: api.method,
+                   parameters: api.parameter,
+                   encoding: URLEncoding(destination: .queryString))
+        .validate(statusCode: 200..<500)
+        .responseDecodable(of: T.self) { response in
             switch response.result {
             case .success(let value):
-                completionHandler(value)
+                completionHandler(value, nil)
             case .failure(let error):
-                print(error)
+                completionHandler(nil, error)
             }
         }
     }

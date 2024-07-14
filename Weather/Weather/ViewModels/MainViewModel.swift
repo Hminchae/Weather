@@ -26,8 +26,13 @@ final class MainViewModel {
     }
     
     private func callRequest() {
-        NetworkManager.shared.getWeather(id: 1835847) { result in
-            self.outputData.value = result 
+        NetworkManager.shared.request(api: OpenRequest.weatherWithID(id: 1835847), model: OpenWeather.self) { weather, error in
+            if let weather = weather {
+                print(weather)
+                self.outputData.value = weather
+            } else if let error = error {
+                print(error)
+            }
         }
     }
 }
