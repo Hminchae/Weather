@@ -35,9 +35,9 @@ final class HorizontalCollectionViewCell: BaseCollectionViewCell {
     }()
     
     override func configureHierarchy() {
-        addSubview(hourLabel)
-        addSubview(weatherIcon)
-        addSubview(tempLabel)
+        contentView.addSubview(hourLabel)
+        contentView.addSubview(weatherIcon)
+        contentView.addSubview(tempLabel)
     }
     
     override func configureLayout() {
